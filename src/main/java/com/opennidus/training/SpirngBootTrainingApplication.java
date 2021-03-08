@@ -11,3 +11,4 @@ public class SpirngBootTrainingApplication {
 	}
 
 }
+//this is main class
