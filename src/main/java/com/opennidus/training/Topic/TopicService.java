@@ -1,6 +1,5 @@
 package com.opennidus.training.Topic;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -15,10 +14,10 @@ public class TopicService {
 	private TopicRepository topicRepository;
 	
 	public List<Topic> getAllTopics() {
-		List<Topic> top = new ArrayList<>();
-		topicRepository.findAll()
-		.forEach(top::add);
-		return top;
+		//List<Topic> top = new ArrayList<>();
+		return topicRepository.findAll();
+		//.forEach(top::add);
+		//top;
 	}
     
 	public Optional<Topic> getTopic(int id){
